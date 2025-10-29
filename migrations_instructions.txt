@@ -1,0 +1,5 @@
+Migration and MariaDB setup instructions:
+1. Ensure MariaDB server is running and a database 'stickynotes_db' exists (or change NAME in settings.py).
+2. Install mysqlclient: pip install mysqlclient
+3. Run: python manage.py makemigrations stickynotes_app
+4. Run: python manage.py migrate
