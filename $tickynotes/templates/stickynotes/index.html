@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="max-width: 800px; margin: 50px auto; font-family: Arial, sans-serif;">
+
+    <h1 style="text-align: center; color: #333;">Welcome to Sticky Notes</h1>
+    <p style="text-align: center; color: #555;">
+        Manage your notes quickly and efficiently.
+    </p>
+
+    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 30px;">
+        <a href="{% url 'note_list' %}" 
+           style="text-decoration: none; padding: 10px 20px; background-color: #4CAF50; color: white; border-radius: 5px;">
+           View Notes
+        </a>
+
+        <a href="{% url 'note_create' %}" 
+           style="text-decoration: none; padding: 10px 20px; background-color: #2196F3; color: white; border-radius: 5px;">
+           Create New Note
+        </a>
+    </div>
+
+    <hr style="margin: 40px 0; border-color: #ddd;">
+
+    <p style="text-align: center; font-size: 0.9em; color: #888;">
+        &copy; 2025 Sticky Notes App
+    </p>
+</div>
+{% endblock %}
